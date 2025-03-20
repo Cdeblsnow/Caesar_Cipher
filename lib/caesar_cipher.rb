@@ -1,7 +1,7 @@
 class Cipher
   def initialize(sentence, shift)
     @sentence = sentence
-    @shift = shift
+    @shift = shift.to_i
   end
 
   def transform_sentence(result = "")
@@ -11,6 +11,8 @@ class Cipher
     end
     result
   end
+
+  private
 
   def character_shift(char, base)
     char_num = char.ord

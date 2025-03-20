@@ -1,4 +1,4 @@
-require_relative "lib/cesar_cipher"
+require_relative "lib/caesar_cipher"
 
 puts "Enter your sentences and then press enter"
 sentence = gets.chomp
